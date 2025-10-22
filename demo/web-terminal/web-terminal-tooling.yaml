@@ -20,8 +20,8 @@ spec:
             [ -d "$HOME/bin" ] || mkdir "$HOME/bin"
 
             echo "
-            GIT_REPO=https://github.com/redhat-na-ssa/ocp-rhoai-deploy.git
-            GIT_PATH=ocp-rhoai-deploy
+            GIT_REPO=https://github.com/redhat-na-ssa/demo-ocp-ai-workloads.git
+            GIT_PATH=demo-ocp-ai-workloads
 
             [ -e ~/\${GIT_PATH} ] || git clone \${GIT_REPO} ~/\${GIT_PATH}
             [ -e ~/\${GIT_PATH} ] && cd ~/\${GIT_PATH}
