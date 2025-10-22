@@ -7,3 +7,4 @@ components:
 resources:
   - operators/nfd
   - operators/nvidia-gpu-operator
+  - operators/kueue-operator
