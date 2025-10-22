@@ -1,0 +1,18 @@
+# custom excludes
+data/
+scratch/
+*.log
+
+# swap files
+*~
+.*~
+*.swp
+.*.swp
+*.swo
+tmp
+
+# Environments
+.env
+.venv
+env/
+venv/
