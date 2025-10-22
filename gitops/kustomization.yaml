@@ -5,6 +5,7 @@ components:
   - branding
 
 resources:
+  - kueue
   - operators/nfd
   - operators/nvidia-gpu-operator
   - operators/leader-worker-set
