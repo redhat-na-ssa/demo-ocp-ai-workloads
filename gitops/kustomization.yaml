@@ -3,5 +3,7 @@ kind: Kustomization
 
 components:
   - branding
+
+resources:
   - operators/nfd
   - operators/nvidia-gpu-operator
