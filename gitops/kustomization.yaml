@@ -7,4 +7,5 @@ components:
 resources:
   - operators/nfd
   - operators/nvidia-gpu-operator
+  - operators/leader-worker-set
   - operators/kueue-operator
