@@ -2,7 +2,7 @@ kind: Kueue
 apiVersion: kueue.openshift.io/v1
 metadata:
   labels:
-    # app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/managed-by: kustomize
     app.kubernetes.io/name: kueue-operator
   name: cluster
 spec:
@@ -10,6 +10,8 @@ spec:
     integrations:
       frameworks:
         - BatchJob
+    preemption:
+      preemptionPolicy: Classical
   # logLevel: Debug
   # operatorLogLevel: Debug
   managementState: Managed
