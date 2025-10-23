@@ -11,6 +11,10 @@ Consider the following if using Kueue with OpenShift AI integrations.
 >
 >You cannot install both the embedded Kueue and the Red Hat build of Kueue Operator on the same cluster because this creates conflicting controllers that manage the same resources.
 
+### Links
+
+- [Deploy a machine learning model by using KServe RawDeployment](https://access.redhat.com/solutions/7078183)
+
 ### Kueue management modes
 
 `Managed`
@@ -31,6 +35,36 @@ spec:
   components:
     kueue:
       managementState: Unmanaged
+    kserve:
+      defaultDeploymentMode: RawDeployment
+      managementState: Managed
+      serving:
+        managementState: Removed
+        name: knative-serving
+```
+
+```yaml
+apiVersion: opendatahub.io/v1alpha
+kind: OdhDashboardConfig
+metadata:
+  name: odh-dashboard-config
+spec:
+  # bug: if this is missing the dashboard loses it's mind
+  # https://issues.redhat.com/browse/RHOAIENG-15245
+  dashboardConfig:
+    disableHardwareProfiles: 'false'
+    disableKueue: 'false'
+```
+
+```yaml
+apiVersion: dscinitialization.opendatahub.io/v1
+kind: DSCInitialization
+metadata:
+  name: default-dsci
+spec:
+  serviceMesh:
+    managementState: Removed
+
 ```
 
 ## TL;DR
