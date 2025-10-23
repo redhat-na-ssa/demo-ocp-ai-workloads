@@ -16,6 +16,8 @@ oc label namespace <namespace> kueue.openshift.io/managed=true
 - The kueue operator does not appear to create the cluster roles from the [docs](https://docs.redhat.com/en/documentation/openshift_container_platform/4.19/html/ai_workloads/red-hat-build-of-kueue#authentication-clusterroles)
   - `kueue-batch-user-role`
   - `kueue-batch-admin-role`
+- Error logs from the operator w/o cert manager installed
+  - `please make sure that cert-manager is installed on your cluster`
 
 ## Links
 
