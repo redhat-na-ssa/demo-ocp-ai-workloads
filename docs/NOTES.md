@@ -29,6 +29,17 @@ In this mode, OpenShift AI integrates with an existing Kueue installation manage
 When Unmanaged mode is enabled, the OpenShift AI Operator creates a default Kueue custom resource (CR) if one does not already exist. This prompts the Red Hat build of Kueue Operator to install its controller manager and activate Kueue. As a result, a cluster administrator only needs to install the Red Hat build of Kueue Operator and set the managementState to Unmanaged.
 ```
 
+```yaml
+apiVersion: datasciencecluster.opendatahub.io/v1
+kind: DataScienceCluster
+metadata:
+  name: default-dsc
+spec:
+  components:
+    kueue:
+      managementState: Removed
+```
+
 ## Links
 
 - https://ai-on-openshift.io/odh-rhoai/kueue-preemption/readme/
