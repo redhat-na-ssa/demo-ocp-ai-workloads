@@ -41,4 +41,12 @@ until oc apply -k https://github.com/redhat-na-ssa/demo-ocp-ai-workloads/demo/we
 $(wtoctl | grep 'oc delete')
 ```
 
+Setup at least 1 worker and isolate the control plane
+
+```sh
+ocp_machineset_scale 1
+ocp_control_nodes_not_schedulable
+oc apply -k ../demo_ops/components/cluster-configs/autoscale/overlays/default
+```
+
 See [NOTES](NOTES.md)
