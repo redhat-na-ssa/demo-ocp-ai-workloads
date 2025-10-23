@@ -5,5 +5,5 @@ metadata:
     openshift.io/display-name: "Demo - Kueue Jobs"
   labels:
     openshift.io/cluster-monitoring: 'true'
-    kueue.openshift.io/managed: true
+    kueue.openshift.io/managed: 'true'
   name: demo-kueue
