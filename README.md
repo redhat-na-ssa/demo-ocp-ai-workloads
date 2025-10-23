@@ -41,7 +41,8 @@ until oc apply -k https://github.com/redhat-na-ssa/demo-ocp-ai-workloads/demo/we
 $(wtoctl | grep 'oc delete')
 ```
 
-NOTE: Run the following commands from the enhanced web terminal
+> [!IMPORTANT]  
+> Run the following commands from the enhanced web terminal
 
 Setup at least 1 worker and isolate the control plane
 
