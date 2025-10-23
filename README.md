@@ -69,3 +69,4 @@ until oc apply -k demo; do : ; done
 ## Additional Info
 
 See [NOTES](docs/NOTES.md)
+See [KUEUE](docs/KUEUE.md)

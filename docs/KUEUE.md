@@ -8,4 +8,4 @@ Components:
 1. Cohort: A cluster-scoped resource for organizing quotas. ClusterQueues within the same Cohort can share resources with each other. <https://kueue.sigs.k8s.io/docs/concepts/cohort/>
 1. ResourceFlavor: An object that defines available compute resources in a cluster and enables fine-grained resource management by associating workloads with specific node types. <https://kueue.sigs.k8s.io/docs/concepts/resource_flavor/>
 
-![IMAGE](kueue-concept-diagram.png)
+![IMAGE](images/kueue-concept-diagram.png)
