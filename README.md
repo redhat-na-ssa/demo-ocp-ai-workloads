@@ -33,6 +33,9 @@ NOTE: Reload the page in your browser if you do not see the icon after installin
 
 ## Make the enhanced web terminal permanent
 
+> [!IMPORTANT]  
+> Run the following commands from the enhanced web terminal
+
 ```sh
 # apply the enhanced web terminal
 until oc apply -k https://github.com/redhat-na-ssa/demo-ocp-ai-workloads/demo/web-terminal; do : ; done
@@ -40,9 +43,6 @@ until oc apply -k https://github.com/redhat-na-ssa/demo-ocp-ai-workloads/demo/we
 # reset the web terminal (from the web terminal)
 $(wtoctl | grep 'oc delete')
 ```
-
-> [!IMPORTANT]  
-> Run the following commands from the enhanced web terminal
 
 Setup at least 1 worker and isolate the control plane
 
