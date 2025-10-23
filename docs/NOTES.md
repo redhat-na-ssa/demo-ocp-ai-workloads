@@ -19,8 +19,10 @@ Consider the following if using Kueue with OpenShift AI integrations.
 
 `Managed`
 > OpenShift AI deploys and manages the embedded Kueue component. This is the current default but is being deprecated.
+
 `Unmanaged`
 > OpenShift AI integrates with the Red Hat build of Kueue Operator that you install separately.
+
 `Removed`
 > The Kueue component is disabled uninstalled from OpenShift AI.
 
