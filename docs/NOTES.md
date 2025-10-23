@@ -4,6 +4,8 @@
 
 [RHOAI Docs - Kueue](https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/2.23/html/managing_openshift_ai/managing-workloads-with-kueue_kueue)
 
+Consider the following if using Kueue with OpenShift AI integrations.
+
 > [!IMPORTANT]
 > OpenShift AI 2.23 and earlier versions include an embedded Kueue component for managing distributed workloads. Starting with OpenShift AI 2.24, the embedded Kueue component will be deprecated and Kueue will be provided through Red Hat build of Kueue, which is installed and managed by the Red Hat build of Kueue Operator.
 >
@@ -11,9 +13,12 @@
 
 ### Kueue management modes
 
+`Managed`
+> OpenShift AI deploys and manages the embedded Kueue component. This is the current default but is being deprecated.
+`Unmanaged`
+> OpenShift AI integrates with the Red Hat build of Kueue Operator that you install separately.
 `Removed`
-
->This mode disables Kueue in OpenShift AI. If the mode was previously Managed, OpenShift AI uninstalls the embedded distribution. If the mode was previously Unmanaged, OpenShift AI stops checking for the external Kueue integration but does not uninstall the Red Hat build of Kueue Operator. An empty managementState value also functions as Removed.
+> The Kueue component is disabled uninstalled from OpenShift AI.
 
 Example DataScienceCluster CR
 
@@ -25,7 +30,7 @@ metadata:
 spec:
   components:
     kueue:
-      managementState: Removed
+      managementState: Unmanaged
 ```
 
 ## TL;DR

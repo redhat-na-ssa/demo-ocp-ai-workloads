@@ -68,8 +68,8 @@ until oc apply -k demo; do : ; done
 
 ## Additional Info
 
-See [NOTES](docs/NOTES.md)
-See [KUEUE](docs/KUEUE.md)
+- See [NOTES](docs/NOTES.md)
+- See [KUEUE](docs/KUEUE.md)
 
 - [Kueue Docs - Upstream](https://kueue.sigs.k8s.io/docs)
 - [OpenShift - Ai Workloads](https://docs.redhat.com/en/documentation/openshift_container_platform/4.19/html/ai_workloads/index)
