@@ -4,7 +4,7 @@ metadata:
   generateName: example-
   labels:
     kueue.x-k8s.io/queue-name: local-queue
-  name: example
+  # name: example
 spec:
   template:
     spec:
