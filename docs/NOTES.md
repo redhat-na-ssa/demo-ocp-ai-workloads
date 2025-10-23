@@ -1,23 +1,6 @@
 # Working Notes for building the demo
 
-## TL;DR
-
-Label a namespace you want kueue to manage
-
-```sh
-oc label namespace <namespace> kueue.openshift.io/managed=true
-```
-
-## Issues Found
-
-- `namespace` is not valid for a `kueue` CR
-  - See [docs](https://docs.redhat.com/en/documentation/openshift_container_platform/4.19/html/ai_workloads/red-hat-build-of-kueue#create-kueue-cr_install-disconnected)
-  - See [local example](../gitops/operators/kueue-operator/instance/base/kueue.yaml)
-- The kueue operator does not appear to create the cluster roles from the [docs](https://docs.redhat.com/en/documentation/openshift_container_platform/4.19/html/ai_workloads/red-hat-build-of-kueue#authentication-clusterroles)
-  - `kueue-batch-user-role`
-  - `kueue-batch-admin-role`
-
-RHOAI + Kueue
+## RHOAI + Kueue
 
 [RHOAI Docs - Kueue](https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/2.23/html/managing_openshift_ai/managing-workloads-with-kueue_kueue)
 
@@ -42,6 +25,23 @@ spec:
     kueue:
       managementState: Removed
 ```
+
+## TL;DR
+
+Label a namespace you want kueue to manage
+
+```sh
+oc label namespace <namespace> kueue.openshift.io/managed=true
+```
+
+## Issues Found
+
+- `namespace` is not valid for a `kueue` CR
+  - See [docs](https://docs.redhat.com/en/documentation/openshift_container_platform/4.19/html/ai_workloads/red-hat-build-of-kueue#create-kueue-cr_install-disconnected)
+  - See [local example](../gitops/operators/kueue-operator/instance/base/kueue.yaml)
+- The kueue operator does not appear to create the cluster roles from the [docs](https://docs.redhat.com/en/documentation/openshift_container_platform/4.19/html/ai_workloads/red-hat-build-of-kueue#authentication-clusterroles)
+  - `kueue-batch-user-role`
+  - `kueue-batch-admin-role`
 
 ## Links
 
