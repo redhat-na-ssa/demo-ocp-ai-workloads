@@ -1,7 +1,7 @@
 apiVersion: batch/v1
 kind: Job
 metadata:
-  generateName: example-
+  generateName: example-gpu-
   labels:
     kueue.x-k8s.io/queue-name: user-queue
   # name: example
