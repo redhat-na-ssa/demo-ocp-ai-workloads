@@ -54,8 +54,8 @@ metadata:
   name: odh-dashboard-config
 spec:
   dashboardConfig:
-    disableHardwareProfiles: 'false'
-    disableKueue: 'false'
+    disableHardwareProfiles: false
+    disableKueue: false
 ```
 
 Example `DSCInitialization`
