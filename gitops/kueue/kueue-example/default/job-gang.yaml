@@ -1,0 +1,24 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  generateName: example-
+  labels:
+    kueue.x-k8s.io/queue-name: local-queue
+  # name: example
+spec:
+  parallelism: 6
+  completions: 3
+  template:
+    spec:
+      containers:
+        - name: minion
+          image: registry.redhat.io/openshift4/ose-cli
+          command:
+            - /bin/bash
+            - -c
+            - |
+              #!/bin/sh
+              sleep 10
+              echo "OK"
+      restartPolicy: Never
+  backoffLimit: 4
