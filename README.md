@@ -60,4 +60,12 @@ ocp_aws_machineset_create_gpu
 ocp_machineset_scale 1
 ```
 
-See [NOTES](NOTES.md)
+## Demo Quickstart
+
+```sh
+until oc apply -k demo; do : ; done
+```
+
+## Additional Info
+
+See [NOTES](docs/NOTES.md)
