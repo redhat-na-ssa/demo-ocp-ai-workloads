@@ -1,6 +1,7 @@
 apiVersion: batch/v1
 kind: Job
 metadata:
+  generateName: example-
   # labels:
   #   kueue.x-k8s.io/queue-name: local-queue
   name: example
