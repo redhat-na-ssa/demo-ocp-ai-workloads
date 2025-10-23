@@ -9,9 +9,9 @@ spec:
     - cpu
     - memory
     flavors:
-    - name: "default-flavor"
+    - name: default-flavor
       resources:
-      - name: "cpu"
-        nominalQuota: 10
-      - name: "memory"
+      - name: cpu
+        nominalQuota: "10"
+      - name: memory
         nominalQuota: 64Gi

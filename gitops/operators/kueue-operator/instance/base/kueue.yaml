@@ -12,8 +12,8 @@ spec:
         - BatchJob
     preemption:
       preemptionPolicy: Classical
-    workloadManagement:
-      labelPolicy: QueueName
+    # workloadManagement:
+    #   labelPolicy: QueueName
   # logLevel: Debug
   # operatorLogLevel: Debug
   managementState: Managed
