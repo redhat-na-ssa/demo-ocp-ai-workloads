@@ -7,3 +7,4 @@ resources:
   - flavor-gpu.yaml
   - que-a.yaml
   - que-b.yaml
+  - workload-priority.yaml
