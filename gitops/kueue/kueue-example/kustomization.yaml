@@ -3,4 +3,6 @@ kind: Kustomization
 
 resources:
   - cluster
+  - team-a
+  - team-b
   - namespace.yaml
