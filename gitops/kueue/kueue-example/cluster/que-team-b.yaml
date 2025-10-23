@@ -11,7 +11,7 @@ spec:
     withinClusterQueue: Never
   namespaceSelector:  
     matchLabels:
-      kubernetes.io/metadata.name: team-a
+      kubernetes.io/metadata.name: team-b
   queueingStrategy: BestEffortFIFO
   cohort: team-ab
   resourceGroups:
