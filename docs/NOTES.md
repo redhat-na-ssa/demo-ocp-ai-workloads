@@ -26,7 +26,7 @@ Consider the following if using Kueue with OpenShift AI integrations.
 `Removed`
 > The Kueue component is disabled uninstalled from OpenShift AI.
 
-Example DataScienceCluster CR
+Example `DataScienceCluster`
 
 ```yaml
 apiVersion: datasciencecluster.opendatahub.io/v1
@@ -45,6 +45,8 @@ spec:
         name: knative-serving
 ```
 
+Example `OdhDashboardConfig`
+
 ```yaml
 apiVersion: opendatahub.io/v1alpha
 kind: OdhDashboardConfig
@@ -55,6 +57,8 @@ spec:
     disableHardwareProfiles: 'false'
     disableKueue: 'false'
 ```
+
+Example `DSCInitialization`
 
 ```yaml
 apiVersion: dscinitialization.opendatahub.io/v1
