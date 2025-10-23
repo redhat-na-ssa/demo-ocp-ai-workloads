@@ -11,9 +11,11 @@ spec:
       frameworks:
         - BatchJob
     preemption:
+      # Classical (default), FairSharing
       preemptionPolicy: Classical
-    # workloadManagement:
-    #   labelPolicy: QueueName
+    workloadManagement:
+      # QueueName (default), None
+      labelPolicy: QueueName
   # logLevel: Debug
   # operatorLogLevel: Debug
   managementState: Managed
