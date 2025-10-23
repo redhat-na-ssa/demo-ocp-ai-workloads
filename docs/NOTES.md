@@ -11,9 +11,11 @@
 
 ### Kueue management modes
 
-> Removed
->
+`Removed`
+
 >This mode disables Kueue in OpenShift AI. If the mode was previously Managed, OpenShift AI uninstalls the embedded distribution. If the mode was previously Unmanaged, OpenShift AI stops checking for the external Kueue integration but does not uninstall the Red Hat build of Kueue Operator. An empty managementState value also functions as Removed.
+
+Example DataScienceCluster CR
 
 ```yaml
 apiVersion: datasciencecluster.opendatahub.io/v1
