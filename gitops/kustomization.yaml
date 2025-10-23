@@ -6,6 +6,7 @@ components:
 
 resources:
   - kueue
+  - operators/cert-manager
   - operators/nfd
   - operators/nvidia-gpu-operator
   - operators/leader-worker-set
