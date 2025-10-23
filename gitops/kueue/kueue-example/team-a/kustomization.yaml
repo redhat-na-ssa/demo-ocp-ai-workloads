@@ -1,0 +1,8 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+  - edit-crb.yaml
+  - edit-group.yaml
+  - local-queue.yaml
+  - namespace.yaml
