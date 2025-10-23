@@ -3,18 +3,20 @@ kind: ClusterQueue
 metadata:
   name: team-b-cq
 spec:
-  preemption:
-    reclaimWithinCohort: Any
-    borrowWithinCohort:
-      policy: LowerPriority
-      maxPriorityThreshold: 100
-    withinClusterQueue: Never
   namespaceSelector:  
     matchLabels:
       kubernetes.io/metadata.name: team-b
   queueingStrategy: BestEffortFIFO
   cohort: team-ab
   resourceGroups:
+  - coveredResources:
+    - nvidia.com/gpu
+    flavors:
+    - name: gpu-flavor
+      resources:
+      - name: nvidia.com/gpu
+        nominalQuota: "0"
+        borrowingLimit: "0"
   - coveredResources:
     - cpu
     - memory
@@ -24,11 +26,4 @@ spec:
       - name: cpu
         nominalQuota: "0"
       - name: memory
-        nominalQuota: "0"
-  - coveredResources:
-    - nvidia.com/gpu
-    flavors:
-    - name: gpu-flavor
-      resources:
-      - name: nvidia.com/gpu
         nominalQuota: "0"
