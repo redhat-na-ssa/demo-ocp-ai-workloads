@@ -4,7 +4,7 @@ kind: Pod
 metadata:
   generateName: sample-leader-
   labels:
-    kueue.x-k8s.io/queue-name: local-queue
+    kueue.x-k8s.io/queue-name: user-queue
     kueue.x-k8s.io/pod-group-name: "sample-group"
   annotations:
     kueue.x-k8s.io/pod-group-total-count: "2"
@@ -23,7 +23,7 @@ kind: Pod
 metadata:
   generateName: sample-worker-
   labels:
-    kueue.x-k8s.io/queue-name: local-queue
+    kueue.x-k8s.io/queue-name: user-queue
     kueue.x-k8s.io/pod-group-name: "sample-group"
   annotations:
     kueue.x-k8s.io/pod-group-total-count: "2"
