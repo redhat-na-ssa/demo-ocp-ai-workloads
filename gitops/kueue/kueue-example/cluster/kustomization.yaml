@@ -5,6 +5,7 @@ resources:
   - cohort-ab.yaml
   - flavor-default.yaml
   - flavor-gpu.yaml
-  - que-a.yaml
-  - que-b.yaml
+  - que-shared.yaml
+  - que-team-a.yaml
+  - que-team-b.yaml
   - workload-priority.yaml
