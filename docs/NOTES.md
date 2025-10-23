@@ -49,8 +49,6 @@ kind: OdhDashboardConfig
 metadata:
   name: odh-dashboard-config
 spec:
-  # bug: if this is missing the dashboard loses it's mind
-  # https://issues.redhat.com/browse/RHOAIENG-15245
   dashboardConfig:
     disableHardwareProfiles: 'false'
     disableKueue: 'false'
