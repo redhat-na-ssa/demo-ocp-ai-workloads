@@ -29,3 +29,8 @@ oc label namespace <namespace> kueue.openshift.io/managed=true
 - The kueue operator does not appear to create the cluster roles from the [docs](https://docs.redhat.com/en/documentation/openshift_container_platform/4.19/html/ai_workloads/red-hat-build-of-kueue#authentication-clusterroles)
   - `kueue-batch-user-role`
   - `kueue-batch-admin-role`
+
+## Links
+
+- https://ai-on-openshift.io/odh-rhoai/kueue-preemption/readme/
+- https://github.com/kubernetes-sigs/kueue/issues/2681
