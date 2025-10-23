@@ -41,12 +41,22 @@ until oc apply -k https://github.com/redhat-na-ssa/demo-ocp-ai-workloads/demo/we
 $(wtoctl | grep 'oc delete')
 ```
 
+NOTE: Run the following commands from the enhanced web terminal
+
 Setup at least 1 worker and isolate the control plane
 
 ```sh
 ocp_machineset_scale 1
 ocp_control_nodes_not_schedulable
 oc apply -k ../demo_ops/components/cluster-configs/autoscale/overlays/default
+```
+
+Setup Nvidia GPU Node
+
+```sh
+# setup gpu node
+ocp_aws_machineset_create_gpu
+ocp_machineset_scale 1
 ```
 
 See [NOTES](NOTES.md)
