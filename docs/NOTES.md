@@ -33,4 +33,5 @@ oc label namespace <namespace> kueue.openshift.io/managed=true
 ## Links
 
 - https://ai-on-openshift.io/odh-rhoai/kueue-preemption/readme/
+- https://kueue.sigs.k8s.io/docs/concepts/cluster_queue/
 - https://github.com/kubernetes-sigs/kueue/issues/2681
