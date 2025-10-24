@@ -13,7 +13,7 @@ Consider the following if using Kueue with OpenShift AI integrations.
 
 ### Links
 
-- [Deploy a machine learning model by using KServe RawDeployment](https://access.redhat.com/solutions/7078183)
+- [RHOAI - Managing workloads with Kueue](https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/2.24/html/managing_openshift_ai/managing-workloads-with-kueue)
 
 ### Kueue management modes
 
